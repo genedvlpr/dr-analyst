@@ -1,6 +1,13 @@
+# Android Based Diabetic retinopathy Classifier using Tensorflow
+Classifying different stages of Diabetic Retino[athy through Machine Learning and AI built for Android mobile devices.
+
+# Integrations
+- Tensorflow
+- Firebase Auth, Firestore, Analytics and Storage
+
 ### License
 ```
-   Copyright (C) 2018 GENE RODRIGUEZ PRIVATE LIMITED
+   Copyright (C) 2018 Gene Diether Rodriguez PRIVATE LIMITED
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
