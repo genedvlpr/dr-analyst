@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppThemeNoActionBarColoredDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activities.PatientFinalInfoNew">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_name"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_assignment_ind_24px" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/img_name"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/pName2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="false"
+                            android:layout_marginStart="10dp"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:hint="Patient's Name"
+                            android:inputType="textPersonName"
+                            android:text="Patient name"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_name">
+
+                    <ImageView
+                        android:id="@+id/img_address"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_place_24px" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/img_address"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/pAddress1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="false"
+                            android:layout_marginStart="10dp"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:hint="Patient's Address"
+                            android:inputType="textPersonName"
+                            android:text="Patient Address"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_address">
+
+                    <ImageView
+                        android:id="@+id/img_contact"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_call_24px" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/img_contact"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/pContact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="false"
+                            android:layout_marginStart="10dp"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:hint="Patient's Contact No."
+                            android:imeOptions="actionDone"
+                            android:inputType="phone"
+                            android:text="Patient Contact no."
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_contact">
+
+                    <ImageView
+                        android:id="@+id/img_birthday"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_cake_24px" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/relDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img_birthday"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/pBirthday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="false"
+                            android:layout_marginStart="10dp"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:hint="Patient's Birthday"
+                            android:inputType="textPersonName"
+                            android:text="Set the date."
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tvDate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/relDate"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textSize="18sp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_birthday">
+
+                    <ImageView
+                        android:id="@+id/img_age"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_face_24px" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img_age"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/pAge1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="false"
+                            android:layout_marginStart="10dp"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:hint="Patient's Age"
+                            android:inputType="textPersonName"
+                            android:text="Set the date."
+                            android:textColorHint="@color/secondaryText"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rel_checkup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_age">
+
+                    <ImageView
+                        android:id="@+id/img_checkup"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_event_24px" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/cd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img_checkup"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/pCheckUpDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="false"
+                            android:layout_marginStart="10dp"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:hint="Checkup Date"
+                            android:inputType="textPersonName"
+                            android:text="Checkup date"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="50dp"
+                        android:layout_toLeftOf="@+id/select_checkup"
+                        android:layout_toRightOf="@+id/cd"
+                        android:visibility="invisible">
+
+                        <EditText
+                            android:id="@+id/tvCheckupDate2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="false"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:hint="Checkup Date"
+                            android:inputType="textPersonName"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_checkup">
+
+                    <ImageView
+                        android:id="@+id/img_gender"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_wc_24px" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textInput3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img_gender"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/pGender1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="false"
+                            android:layout_marginStart="10dp"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:hint="Patient's Gender"
+                            android:inputType="textPersonName"
+                            android:text="Patients Gender"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_diagnosis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_gender">
+
+                    <ImageView
+                        android:id="@+id/img_diagnosis"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_disc_full_24px" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textInput5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img_diagnosis"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/pResults1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="false"
+                            android:layout_marginStart="10dp"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:hint="Diagnosis"
+                            android:inputType="textPersonName"
+                            android:text="Diagnosis"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_diagnosis">
+
+                    <ImageView
+                        android:id="@+id/img_type"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_center_focus_strong_24px" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textInput4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img_type"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/pClassifyType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="false"
+                            android:layout_marginStart="10dp"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:hint="Classification type"
+                            android:inputType="textPersonName"
+                            android:text="Classification type"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@mipmap/outline_cloud_upload_white_48dp" />
+</RelativeLayout>

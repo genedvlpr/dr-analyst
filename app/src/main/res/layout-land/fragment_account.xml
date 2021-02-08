@@ -1,0 +1,387 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/AppThemeNoActionBarColoredDark"
+    tools:context=".Activities.Home">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/crd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/stats"
+            app:cardElevation="2dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <RelativeLayout
+                    android:id="@+id/rel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:id="@+id/home_header"
+                        android:textColor="@color/primaryText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/rel1"
+                    android:layout_centerHorizontal="true">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+                        <RelativeLayout
+                            android:id="@+id/imgLine"
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/subtitle"
+                            android:layout_alignTop="@+id/subtitle"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/subtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginStart="5dp"
+                            android:layout_toRightOf="@+id/imgLine"
+                            android:text="Access your account credentials and edit it, you can now change your
+account credentials such as your name, address, contact no., clinic name
+and clinic address."
+                            android:textSize="10sp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/crd1"
+            android:id="@+id/crd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/stats"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:id="@+id/relLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/warn_bg"
+                        android:layout_width="90dp"
+                        android:layout_height="60dp"
+                        android:background="@color/warnText">
+
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:background="@mipmap/outline_vpn_key_24px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_toEndOf="@+id/warn_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerVertical="true">
+                        <TextView
+                            android:id="@+id/headlineLogout"
+                            android:textColor="@color/primaryText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Logout" />
+                        <TextView
+                            android:textSize="10sp"
+                            android:id="@+id/subtitleLogout"
+                            android:layout_below="@+id/headlineLogout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Logout your account." />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/crd3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/stats"
+            app:cardElevation="2dp"
+            android:layout_below="@+id/crd2">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="false">
+                    <RelativeLayout
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/listview_img">
+                        <TextView
+                            android:id="@+id/editAcc_headline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit Account"
+                            android:textColor="@color/primaryText"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:clickable="true"/>
+                        <TextView
+                            android:textColor="@color/secondaryText"
+                            android:id="@+id/editAcc_sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editAcc_headline"
+                            android:text="@string/edit_acc_desc"
+                            android:textSize="10sp"/>
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/editAcc_sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/imgLine1"
+                                android:layout_width="2dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/subtitle2"
+                                android:layout_alignTop="@+id/subtitle2"
+                                android:background="@color/warnText" />
+
+                            <TextView
+                                android:id="@+id/subtitle2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentStart="false"
+                                android:layout_marginStart="5dp"
+                                android:textColor="@color/warnText"
+                                android:layout_toRightOf="@+id/imgLine1"
+                                android:text="Access your account credentials and edit it, you can now change your
+account credentials such as your name, address, contact no., clinic name
+and clinic address."
+                                android:textSize="10sp"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/listview_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/ic_acc_edit"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/crd4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/stats"
+            app:cardElevation="2dp"
+            android:layout_below="@+id/crd3">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="false">
+                    <RelativeLayout
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/listview_img2">
+                        <TextView
+                            android:id="@+id/headline_intents2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="History"
+                            android:textColor="@color/primaryText"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:clickable="true"/>
+                        <TextView
+                            android:textColor="@color/secondaryText"
+                            android:id="@+id/subtitle_intents2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/headline_intents2"
+                            android:text="View recent actions."
+                            android:textSize="10sp"/>
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/listview_img2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/ic_recent_actions"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/crd5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/stats"
+            app:cardElevation="2dp"
+            android:layout_below="@+id/crd4">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="false">
+                    <RelativeLayout
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/rel_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true">
+                        <TextView
+                            android:id="@+id/headline_intents3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Powered by"
+                            android:textColor="@color/primaryText"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:clickable="true"/>
+                        <TextView
+                            android:textColor="@color/secondaryText"
+                            android:id="@+id/subtitle_intents3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/headline_intents3"
+                            android:text="Firebase, Google Sigin and Google Play Services."
+                            android:textSize="10sp"/>
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/listview_img3"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/ic_backends"
+                        android:layout_below="@+id/rel_text"
+                        />
+                    <Button
+                        android:id="@+id/view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:text="View Account"
+                        android:textColor="@color/white"
+                        android:layout_alignBottom="@+id/listview_img3"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
+
+
+</FrameLayout>

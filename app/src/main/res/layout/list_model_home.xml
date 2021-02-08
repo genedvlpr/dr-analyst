@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/AppThemeNoActionBarColoredDark"
+    tools:context="com.genedev.retinalclassifierfull.Fragments.HomeTab.HomeFragment">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/crd2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/stats"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rel4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/rel3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="false">
+                        <RelativeLayout
+                            android:layout_marginStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toRightOf="@+id/listview_img">
+                            <TextView
+                                android:id="@+id/headline_intents"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Headline"
+                                android:textColor="@color/primaryText"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:clickable="true"/>
+                            <TextView
+                                android:textColor="@color/secondaryText"
+                                android:id="@+id/subtitle_intents"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/headline_intents"
+                                android:text="Subtitle"
+                                android:textSize="10sp"/>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/listview_img"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+</FrameLayout>

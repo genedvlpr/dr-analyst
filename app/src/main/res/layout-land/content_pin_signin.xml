@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/pin_signin_container"
+    android:layout_height="match_parent"
+    android:theme="@style/AppThemeNoActionBarColoredDark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.genedev.retinalclassifierfull.Activities.PinSignin"
+    tools:showIn="@layout/activity_pin_signin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/headline"
+        android:text="headline"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/line_separator"
+        android:layout_below="@+id/indicator_dots"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        android:src="@drawable/line"/>
+
+    <com.andrognito.pinlockview.IndicatorDots
+        android:id="@+id/indicator_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:dotDiameter="12dp"
+        app:dotEmptyBackground="@color/navBarBackground"
+        app:dotFilledBackground="@drawable/dots_enabled_bg"
+        app:dotSpacing="16dp"
+        app:indicatorType="fillWithAnimation" />
+
+    <com.andrognito.pinlockview.PinLockView
+        android:id="@+id/pin_lock_view"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_separator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:keypadButtonBackgroundDrawable="@drawable/pin_bg"
+        app:keypadButtonSize="64dp"
+        app:keypadDeleteButtonDrawable="@drawable/ic_arrow_back_green_a700_48dp"
+        app:keypadDeleteButtonPressedColor="#C8C8C8"
+        app:keypadDeleteButtonSize="36dp"
+        app:keypadHorizontalSpacing="24dp"
+        app:keypadShowDeleteButton="true"
+        app:keypadTextColor="@color/colorPrimary"
+        app:keypadTextSize="18dp"
+        app:keypadVerticalSpacing="24dp"
+        app:pinLength="4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/warn">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Internet Connection is needed."
+            android:textSize="10sp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

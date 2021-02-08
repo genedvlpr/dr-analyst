@@ -1,0 +1,5 @@
+mild nonproliferative
+moderate nonproliferative
+normal
+proliferative
+severe non proliferative

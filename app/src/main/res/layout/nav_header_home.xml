@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="20dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    tools:context="com.genedev.retinalclassifierfull.Activities.Home">
+
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:id="@+id/circular_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/dots_enabled_bg"
+            android:src="@mipmap/outline_account_box_24px"
+            android:padding="8dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginStart="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/circular_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retinal Image Classifier"
+            android:textColor="@color/primaryText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:layout_below="@+id/userName"
+            android:id="@+id/emailAdd"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondaryText"
+            android:text="Diagnosing Eye Disease" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

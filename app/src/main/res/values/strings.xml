@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">DR Analyst</string>
+    <string name="toggle_camera">Toggle Camera</string>
+    <string name="detect_object">Analyze</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_home1">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_account_details">Account</string>
+    <string name="title_activity_patient_add_info">Patient Details</string>
+    <string name="wifiConnection">You are connected through a Wifi.</string>
+    <string name="dataConnection">You are connected through mobile data.</string>
+    <string name="noConnection">No Internet Connection Available.</string>
+    <string name="retryConnection">Click here to retry.</string>
+    <string name="emailRequired">Email is required</string>
+    <string name="setValidEmail">Set a valid Email Address</string>
+    <string name="passwordRequired">Password is required</string>
+    <string name="passwordCount">Password must be 8 characters</string>
+    <string name="notValidAcc">Not a valid account, please retry.</string>
+    <string name="emailEmpty">Name is required</string>
+    <string name="title_activity_patient_final_info">Patient\'s Diagnosis</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="patientsActivity">Patients</string>
+    <string name="patientListTitle">List of All Patients</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="year">Year</string>
+    <string name="name">Name</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_info">Result Info's</string>
+    <string name="large_text">"Material is the metaphor.\n\n"</string>
+    <string name="conpass">Check your password.</string>
+    <string name="title_activity_pin_setup">PinSetup</string>
+
+    <string name="instructions">Place your fingertip on the Home button to verify your identity</string>
+    <string name="andalyze_description">Analyze taken or imported photo of retina or fundus image that will be diagnosed based on the stages of diabetic retinopathy.</string>
+    <string name="patient_records_description">View and edit your patient records, send reports of diagnosis via email or contact the patient for another analysis.</string>
+    <string name="profile_description">Access, view and edit your account credentials such as email clinic/hospital name and location and your display name.</string>
+    <string name="assistant_description">If you need solutions about patient\'s diagnosis, you can ask your health care assistant.</string>
+    <string name="edit_acc_desc">Edit your account credentials, just fill up again the account form for you to save and update you account.</string>
+    <string name="title_activity_patient_list_new">PatientListNew</string>
+    <string name="title_activity_patient_detailed_view">PatientDetailedView</string>
+    <string name="patient_list_info">All of your data (Patient information\'s are driven, uploaded into Firebase Realtime Database, this let\'s you access patient information\'s in real time by accessing Firebase Realtime Database. The good news is that, there\'s no limitation upon saving your patient\'s information.</string>
+    <string name="trash_info">Click one of the deleted patient\'s information for you to recover it.</string>
+    <string name="capture_desc">Analyze patient\'s retina through capturing the patient\'s retina.</string>
+    <string name="import_desc">Analyze patient\'s retina through importing the patient\'s retinal image.</string>
+    <string name="choose_classification_desc">CHOOSE FROM THESE TWO METHODS OF CLASSIFICATION, EITHER IMPORT AN FUNDUS IMAGE OR CAPTURE PATIENTS RETINA</string>
+    <string name="pdf_data_divider">\n---------------------------------------------------------------------------------------------------------------------------------</string>
+</resources>

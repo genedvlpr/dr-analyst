@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.genedev.retinalclassifierfull.ClassifierImportedImage">
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark">
+
+        <ImageView
+            android:id="@+id/loadedImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/resultinfo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:layout_gravity="top"
+            app:srcCompat="@android:color/black" />
+
+        <TextView
+            android:id="@+id/resultinfo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/rel2"
+            android:textAlignment="center" />
+
+        <RelativeLayout
+            android:id="@+id/rel2"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom">
+
+            <RelativeLayout
+                android:id="@+id/resultsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/captureFrame"
+                android:layout_gravity="bottom"
+                android:background="@color/capture_priview"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/btnExport2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/ic_open_in_new_white_24dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fadeScrollbars="false"
+                            android:gravity="center"
+                            android:maxLines="15"
+                            android:scrollbars="vertical"
+                            android:text="Results"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textViewResult"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginEnd="60dp"
+                            android:layout_marginStart="60dp"
+                            android:fadeScrollbars="false"
+                            android:gravity="center"
+                            android:maxLines="15"
+                            android:scrollbars="vertical"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/captureFrame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@color/capture_priview"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="10sp">
+
+                    <ImageButton
+                        android:id="@+id/btnLoadImage"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:layout_centerHorizontal="false"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginRight="40sp"
+                        android:layout_toLeftOf="@+id/btnDetectObject"
+                        android:background="@drawable/ic_photo_library_black_48dp"
+                        android:visibility="visible" />
+
+                    <ImageButton
+                        android:id="@+id/btnRefresh"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:layout_centerHorizontal="false"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginLeft="40sp"
+                        android:layout_toRightOf="@+id/btnDetectObject"
+                        android:background="@drawable/ic_refresh_black_48dp"
+                        android:visibility="visible" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/btnDetectObject"
+                        android:layout_width="90sp"
+                        android:layout_height="90sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="bottom|center"
+                        android:visibility="visible"
+                        app:lottie_autoPlay="false"
+                        app:lottie_colorFilter="@color/stats"
+                        app:lottie_fileName="btn_capture_new.json"
+                        app:lottie_loop="false" />
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

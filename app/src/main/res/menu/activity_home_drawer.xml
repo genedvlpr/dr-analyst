@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/outline_home_black_48dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_classifier"
+            android:icon="@mipmap/outline_center_focus_strong_black_48dp"
+            android:title="Classifier" />
+        <item
+            android:id="@+id/nav_patient_details"
+            android:icon="@mipmap/outline_people_black_48dp"
+            android:title="Patient Details" />
+    </group>
+
+    <item android:title="Preference">
+        <menu>
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@mipmap/outline_verified_user_black_48dp"
+                android:title="Account" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_outline_black_48dp"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:icon="@drawable/ic_help_outline_black_48dp"
+                android:title="Privacy Policy" />
+        </menu>
+    </item>
+
+</menu>

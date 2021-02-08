@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.genedev.retinalclassifierfull">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:autoRemoveFromRecents="true"
+        android:clearTaskOnLaunch="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoActionBarColoredDark">
+        <activity android:name="com.genedev.retinalclassifierfull.Activities.Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.ClassifierCaptured"
+            android:label="Scan"
+            android:theme="@style/AppThemeFullScreen" />
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.Login"
+            android:theme="@style/AppThemeNoActionBarColoredDark" />
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.Home"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.SignUp"
+            android:theme="@style/AppThemeNoActionBarColoredDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genedev.retinalclassifierfull.Activities.Login" />
+        </activity>
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.EditAccount"
+            android:theme="@style/AppThemeNoActionBarColoredDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genedev.retinalclassifierfull.Activities.Login" />
+        </activity>
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.AccountDetails"
+            android:parentActivityName="com.genedev.retinalclassifierfull.Activities.Home"
+            android:theme="@style/AppThemeNoActionBarColoredDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genedev.retinalclassifierfull.Activities.Home" />
+        </activity>
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.PatientAddInfo"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.ClassifierImport"
+            android:theme="@style/AppThemeFullScreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genedev.retinalclassifierfull.Activities.ClassifierCaptured" />
+        </activity>
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.ImageLibrary"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.PatientFinalInfo"
+            android:theme="@style/AppThemeNoActionBarColored" />
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.AllPatients"
+            android:theme="@style/AppThemeNoActionBarColoredDark" />
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.PatientRecords"
+            android:theme="@style/AppThemeNoActionBarColoredDark" />
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.AllPatientsContacts"
+            android:theme="@style/AppThemeNoActionBarColoredDark" />
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.Reports"
+            android:theme="@style/AppThemeNoActionBarColoredDark" />
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.Trash"
+            android:theme="@style/AppThemeNoActionBarColoredDark" />
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.History"
+            android:theme="@style/AppThemeNoActionBarColoredDark" />
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.Help"
+            android:parentActivityName="com.genedev.retinalclassifierfull.Activities.Home"
+            android:theme="@style/AppThemeNoActionBarColoredDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genedev.retinalclassifierfull.Activities.Home" />
+        </activity>
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.Info"
+            android:parentActivityName="com.genedev.retinalclassifierfull.Activities.Home"
+            android:theme="@style/AppThemeNoActionBarColoredDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genedev.retinalclassifierfull.Activities.Home" />
+        </activity>
+        <activity android:name="com.genedev.retinalclassifierfull.Activities.PinFingerprint" />
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.PinSetup"
+            android:parentActivityName="com.genedev.retinalclassifierfull.Activities.PinFingerprint"
+            android:theme="@style/AppThemeNoActionBarColoredDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genedev.retinalclassifierfull.Activities.PinFingerprint" />
+        </activity>
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.PinSignin"
+            android:theme="@style/AppThemeNoActionBarColoredDark" />
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.FingerprintSetUp"
+            android:theme="@style/AppThemeNoActionBarColoredDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genedev.retinalclassifierfull.Activities.PinFingerprint" />
+        </activity>
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.FingerprintSignin"
+            android:theme="@style/AppThemeNoActionBarColoredDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genedev.retinalclassifierfull.Activities.PinFingerprintSignin" />
+        </activity>
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.PinFingerprintSignin"
+            android:theme="@style/AppThemeNoActionBarColoredDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genedev.retinalclassifierfull.Activities.Splashscreen" />
+        </activity>
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.PatientAddInfoNew"
+            android:theme="@style/AppThemeNoActionBarColoredDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genedev.retinalclassifierfull.Activities.Home" />
+        </activity>
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.PatientFinalInfoNew"
+            android:theme="@style/AppThemeNoActionBarColoredDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genedev.retinalclassifierfull.Activities.ClassifierCaptured" />
+        </activity>
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.PatientDetailedView"
+            android:theme="@style/AppThemeNoActionBarColoredDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genedev.retinalclassifierfull.Activities.AllPatients" />
+        </activity>
+        <activity
+            android:name="com.genedev.retinalclassifierfull.Activities.PatientDeletedDetailedView"
+            android:theme="@style/AppThemeNoActionBarColoredDark">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genedev.retinalclassifierfull.Activities.AllPatients" />
+        </activity>
+        <activity android:name="com.genedev.retinalclassifierfull.Activities.ClassificationModes" />
+        <activity android:name="com.genedev.retinalclassifierfull.AssistantHelpers.Assistant" />
+        <activity android:name="com.genedev.retinalclassifierfull.Activities.About" />
+        <activity android:name="com.genedev.retinalclassifierfull.Activities.PrivacyPolicy"></activity>
+    </application>
+
+</manifest>

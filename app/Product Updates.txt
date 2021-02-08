@@ -1,0 +1,60 @@
+// Tensorflow Retinal Image Classifier
+// Product Updates
+
+Version 1.0.0
+    // First build version
+    1. MainActivity (Home), Classifier (Tensorflow Classifier Activity) 
+       and TensorflowImageClassifier (Tensorflow API Helper Activity) has been created.
+    2. Inception v3 Tensorflow model (graph) and label in app integration.
+    3. Activity layout was composed of CameraView and TextView for results.
+
+Version 1.0.1
+    // Second build version
+    1. Migrated from Inception v3 to MobileNet v3 Tensorflow model.
+
+Version 1.0.2
+    // Third build version
+    1. Rebuild with new Tensorflow graph and label.
+
+Version 1.0.3
+    // Fourth build version
+    1. Rebuild with new Tensorflow graph and label for app optimization.
+
+Version 1.0.4
+    // Fifth build version
+    1. Rebuild with new Tensorflow graph and label for app optimization and accuracy.
+
+Version 1.0.5
+    // Sixth build version
+    1. Changed the UI theme from indigo to blue.
+
+Version 1.0.6
+    // Seventh build version
+    1. Changed the positon of resultsView from top to bottom part of the layout.
+
+Version 1.0.7
+    // Eigth build version
+    1. Added the capture button for the improvement of user experienced design.
+    2. Added the photo preview beside the results textview.
+
+Version 1.0.8
+    // Nineth build version
+    1. Added the camera switch button to use the front camera as the camera for 
+       detection.
+    2. Added the new App Icon.
+
+Version 1.0.9
+    // Tenth build version
+    1. Added the "Results" label in the reslutsView.
+
+Version 1.1.0
+    // Eleventh build version
+    1. Added the camera settings button.
+
+Version 1.1.1
+    // Twelveth build version
+    1. Changed the font size of Results label textview and results textview within the layout.
+
+Version 1.1.2
+    // Tirteenth build version
+    1. Added a splashscreen activity.

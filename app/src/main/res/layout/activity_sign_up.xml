@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppThemeNoActionBarColoredDark"
+    tools:context="com.genedev.retinalclassifierfull.Activities.SignUp">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp">
+                <ImageButton
+                    android:id="@+id/backBtn"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_arrow_back_white_48dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:onClick="back" />
+            </RelativeLayout>
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="ic_register.json"
+                app:lottie_loop="false" />
+
+            <TextView
+                android:id="@+id/headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/animation_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="REGISTER CLOUD ACCOUNT"
+                android:textAlignment="center"
+                android:textColor="@color/primaryText"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headline"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:text="REGISTER TO SAVE AND ACCESS YOUR PATIENTS INFORMATIONS
+AND DIAGNOSTICS THROUGH THE CLOUD."
+                android:textAlignment="center"
+                android:textColor="@color/primaryText"
+                android:textSize="10sp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtitle"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_name"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_assignment_ind_24px" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/img_name">
+
+                        <EditText
+                            android:id="@+id/signup_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="false"
+                            android:layout_marginStart="10dp"
+
+                            android:ems="10"
+                            android:hint="Full Name"
+                            android:inputType="textPersonName"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_clinic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_name">
+
+                    <ImageView
+                        android:id="@+id/img_clinic"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_local_hospital_24px" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/img_clinic">
+                    <EditText
+                        android:id="@+id/signup_clinic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="false"
+                        android:layout_marginStart="10dp"
+                        android:ems="10"
+                        android:hint="Clinic / Hospital Name"
+                        android:inputType="textPersonName"
+                        android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_clinic">
+
+                    <ImageView
+                        android:id="@+id/img_address"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_place_24px" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/img_address">
+                    <EditText
+                        android:id="@+id/signup_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginStart="10dp"
+                        android:ems="10"
+                        android:hint="Clinic / Hospital Address"
+                        android:inputType="textPersonName"
+                        android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_address">
+
+                    <ImageView
+                        android:id="@+id/img_email"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_message_24px" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/img_email">
+
+                        <EditText
+                            android:id="@+id/signup_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="false"
+                            android:layout_marginStart="10dp"
+                            android:ems="10"
+                            android:hint="Email Address"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rel_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_email">
+
+                    <ImageView
+                        android:id="@+id/img_pass"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_dialpad_24px" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/img_pass">
+
+                        <EditText
+                            android:id="@+id/signup_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="false"
+                            android:layout_marginStart="10dp"
+
+                            android:ems="10"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_conpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_pass">
+
+                    <ImageView
+                        android:id="@+id/img_conpass"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/outline_dialpad_24px" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/img_conpass">
+
+                        <EditText
+                            android:id="@+id/signup_conpassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="false"
+                            android:layout_marginStart="10dp"
+                            android:ems="10"
+                            android:hint="Confirm Password"
+                            android:inputType="textPassword"
+                            android:textSize="18sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/error_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/rel_conpass"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="italic" />
+
+                <RelativeLayout
+                    android:id="@+id/refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/error_message"
+                    android:layout_marginStart="20dp">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/refreshImg"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toLeftOf="@+id/sign_retry"
+                        android:src="@mipmap/outline_refresh_24px" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/sign_retry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/warn"
+                        android:textStyle="italic" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/signupBtn"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/refresh"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="Sign Up"
+                    android:textColor="@color/cardview_light_background"
+                    android:textColorLink="@color/stats"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/refresh"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/warn"
+                    android:text="Cancel"
+                    android:textColor="@color/cardview_light_background"
+                    android:textColorLink="@color/stats"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

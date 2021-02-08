@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_login"
+    android:theme="@style/AppThemeNoActionBarColoredDark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.genedev.retinalclassifierfull.Activities.Login"
+    tools:showIn="@layout/activity_login">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="ic_login.json"
+            app:lottie_loop="false" />
+
+        <TextView
+            android:id="@+id/headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animation_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="LOGIN YOUR ACCOUNT"
+            android:textAlignment="center"
+            android:textColor="@color/primaryText"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headline"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:text="LOGIN YOUR ACCOUNT CREDENTIALS TO VIEW AND ACCESS
+YOUR PATIENTS INFORMATIONS AND DIAGNOSTICS THROUGH THE CLOUD."
+            android:textAlignment="center"
+            android:textColor="@color/primaryText"
+            android:textSize="10sp" />
+
+    <RelativeLayout
+        android:id="@+id/rel_credentials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subtitle"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:id="@+id/rel_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/img_email"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/outline_message_24px" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/img_email"
+                android:layout_alignParentEnd="true">
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:layout_marginStart="10dp"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/secondaryText"
+                android:textSize="18sp">
+
+            </EditText>
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/rel_email"
+            android:id="@+id/rel_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_pass"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/outline_dialpad_24px" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/img_pass">
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/secondaryText"
+                    android:textSize="18sp">
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_password"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+
+        <RelativeLayout
+            android:id="@+id/refresh"
+            android:layout_below="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/refreshImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/login_retry"
+                android:src="@mipmap/outline_refresh_24px" />
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:id="@+id/login_retry"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/warn"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/refresh"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="55dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Login"
+            android:textColor="@color/cardview_light_background"
+            android:textColorLink="@color/stats"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/refresh"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="55dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Register"
+            android:textColor="@color/cardview_light_background"
+            android:textColorLink="@color/stats"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

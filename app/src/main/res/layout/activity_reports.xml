@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppThemeNoActionBarColoredDark"
+    tools:context="com.genedev.retinalclassifierfull.Activities.AllPatients">
+
+
+    <RelativeLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp">
+
+            <ImageButton
+                android:id="@+id/backBtn2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_info_outline_white_48dp"
+                android:backgroundTint="@color/card_all_patient"
+                android:onClick="info_db" />
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_arrow_back_white_48dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:onClick="back" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="Reports"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/primaryText"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_below="@+id/headline"
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:text="SClick the fab button below to generate a report to a PDF."
+            android:textColor="@color/primaryText"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:id="@+id/allpatients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/export"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:src="@mipmap/outline_description_white_18dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
