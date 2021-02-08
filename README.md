@@ -1,5 +1,8 @@
 # Android Based Diabetic retinopathy Classifier using Tensorflow
-Classifying different stages of Diabetic Retino[athy through Machine Learning and AI built for Android mobile devices.
+Classifying different stages of Diabetic Retinopathy through Machine Learning and AI built for Android mobile devices.
+
+<img src="https://drive.google.com/uc?export=view&id=1TkDAhtMavosplZysUFzfw1KDabZNdbhj" />
+
 
 # Integrations
 - Tensorflow
